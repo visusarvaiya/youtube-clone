@@ -1,0 +1,18 @@
+{
+    "sourceFile": "backend/src/app.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1774941470205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1774941470205,
+            "name": "Commit-0",
+            "content": "import express from \"express\"\r\nimport cors from \"cors\"\r\nimport cookieParser from \"cookie-parser\"\r\n\r\nconst app = express()\r\n\r\napp.use(cors({\r\n    origin: process.env.CORS_ORIGIN,\r\n    credentials: true\r\n}))\r\n\r\napp.use(express.json({limit: \"16kb\"}))\r\napp.use(express.urlencoded({extended: true, limit: \"16kb\"}))\r\napp.use(express.static(\"public\"))\r\napp.use(cookieParser())\r\n\r\n\r\n//routes import\r\nimport userRouter from './routes/user.routes.js'\r\nimport healthcheckRouter from \"./routes/healthcheck.routes.js\"\r\nimport tweetRouter from \"./routes/tweet.routes.js\"\r\nimport subscriptionRouter from \"./routes/subscription.routes.js\"\r\nimport videoRouter from \"./routes/video.routes.js\"\r\nimport commentRouter from \"./routes/comment.routes.js\"\r\nimport likeRouter from \"./routes/like.routes.js\"\r\nimport playlistRouter from \"./routes/playlist.routes.js\"\r\nimport dashboardRouter from \"./routes/dashboard.routes.js\"\r\n\r\n//routes declaration\r\napp.use(\"/api/v1/healthcheck\", healthcheckRouter)\r\napp.use(\"/api/v1/users\", userRouter)\r\napp.use(\"/api/v1/tweets\", tweetRouter)\r\napp.use(\"/api/v1/subscriptions\", subscriptionRouter)\r\napp.use(\"/api/v1/videos\", videoRouter)\r\napp.use(\"/api/v1/comments\", commentRouter)\r\napp.use(\"/api/v1/likes\", likeRouter)\r\napp.use(\"/api/v1/playlist\", playlistRouter)\r\napp.use(\"/api/v1/dashboard\", dashboardRouter)\r\n\r\n// http://localhost:8000/api/v1/users/register\r\n\r\nexport { app }"
+        }
+    ]
+}

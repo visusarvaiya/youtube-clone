@@ -1,0 +1,18 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1774941470210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1774941470210,
+            "name": "Commit-0",
+            "content": "{\r\n  \"name\": \"axoryn\",\r\n  \"version\": \"1.0.0\",\r\n  \"description\": \"\",\r\n  \"main\": \"index.js\",\r\n  \"scripts\": {\r\n    \"dev\": \"concurrently \\\"npm run server\\\" \\\"npm run client\\\"\",\r\n    \"server\": \"cd backend && npm run dev\",\r\n    \"client\": \"cd frontend && npm run dev\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"git+https://github.com/Yash2204V/Axoryn.git\"\r\n  },\r\n  \"keywords\": [],\r\n  \"author\": \"\",\r\n  \"license\": \"ISC\",\r\n  \"bugs\": {\r\n    \"url\": \"https://github.com/Yash2204V/Axoryn/issues\"\r\n  },\r\n  \"homepage\": \"https://github.com/Yash2204V/Axoryn#readme\",\r\n  \"dependencies\": {\r\n    \"concurrently\": \"^9.2.0\"\r\n  }\r\n}\r\n"
+        }
+    ]
+}
